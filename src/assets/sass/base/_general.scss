@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+
+body {
+  display: grid;
+  place-content: center;
+  background-image: url(../../images/pattern-background-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: clr(primary, 200);
+
+  @include mq(md) {
+    background-image: url(../../images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+button {
+  cursor: pointer;
+  font-weight: fw(bold);
+}

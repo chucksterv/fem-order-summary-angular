@@ -1,0 +1,32 @@
+@use "../../../assets/sass/abstracts/" as *;
+.subscription-plan {
+  display: flex;
+  align-items: center;
+  background-color: clr(neutral, 200);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  column-gap: 1rem;
+  font-size: 0.875rem;
+
+  .annual-plan {
+    color: clr(neutral, 600);
+    font-weight: fw(bold);
+  }
+
+  &__change {
+    color: clr(primary, 400);
+    text-decoration: underline;
+    font-size: 0.785rem;
+    background: none;
+    border: none;
+    margin-left: auto;
+    font-weight: fw(semi-bold);
+    border-radius: 0.75rem;
+    font-size: var(--fs-button);
+    transition: 150ms color ease-in-out;
+
+    &:is(:hover, :focus) {
+      color: clr(primary, 300);
+    }
+  }
+}

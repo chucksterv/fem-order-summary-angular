@@ -1,0 +1,18 @@
+@use "../abstracts/" as *;
+
+body {
+  font-family: $ff-default;
+  font-size: fs(400);
+  font-weight: fw(regular);
+  color: clr(neutral, 400);
+}
+
+h1 {
+  font-size: fs(heading);
+  font-weight: fw(bold);
+  color: clr(neutral, 600);
+
+  @include mq(md) {
+    font-size: 1.75rem;
+  }
+}
