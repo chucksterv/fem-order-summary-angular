@@ -26,7 +26,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ### Links
 
 - Solution URL: [https://github.com/chucksterv/fem-order-summary-angular]
-- Live Site URL: [https://order-summary.projects.deshand.com/]
+- Live Site URL: [https://order-summary-angular.projects.deshand.com/]
 
 ## My process
 
