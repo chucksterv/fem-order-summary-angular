@@ -1,27 +1,64 @@
-# FemOrderSummary
+# FEM - Order Summary Card
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj).
 
-## Development server
+## Table of contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
 
-## Code scaffolding
+## Overview
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### The challenge
 
-## Build
+- See hover states for interactive elements
+- Have a different background depending on the screensize
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Screenshot
 
-## Running unit tests
+![](./screenshot.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Links
 
-## Running end-to-end tests
+- Solution URL: [https://github.com/chucksterv/fem-order-summary-angular]
+- Live Site URL: [https://order-summary.projects.deshand.com/]
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## My process
 
-## Further help
+### Built with
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Angular
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- BEM Naming conventions
+
+### What I learned
+
+- Learned how to pass values into components in Angular using @Input
+- Learned that I should not put the sass folder directory in assests.
+
+```js
+  @Input() text: string;
+  @Input() primary: string;
+  isPrimary: boolean;
+
+  constructor() {
+    this.text = 'Default Text';
+    this.primary = 'true';
+    this.isPrimary = true;
+  }
+
+  ngOnInit() {
+    this.primary === 'true'
+      ? (this.isPrimary = true)
+      : (this.isPrimary = false);
+  }
+```
